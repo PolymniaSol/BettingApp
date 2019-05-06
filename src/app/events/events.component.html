@@ -1,0 +1,22 @@
+<div class="events-container">
+    <div class="events-info">
+        <button class="button">LIVE
+                <div id="num">0</div>
+        </button>
+        <button class="button">PREGAME
+                <div id="num">63</div>
+        </button>
+        <button class="button"><img src="../../assets/football1.png" width="13px"> FOOTBALL
+            <div id="num">52</div>
+        </button>
+        <button class="button"><img src="../../assets/basketball.png" width="13px"> BASKETBALL
+                <div id="num">11</div>
+        </button>
+    </div>
+    <div class="events">
+        <div *ngFor="let event of footballEvents; let i=index" [ngClass]="{'even': i % 2 === 0 , 'odd': i % 2 != 0}">
+            <app-football-event [footballEvent]="event"></app-football-event>
+        </div>
+      
+    </div>
+</div>

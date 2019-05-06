@@ -1,0 +1,105 @@
+.event {
+    display: flex;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color:  #6cff50;
+    height: 80px;
+    width: 100%;
+  }
+  .event-info{
+    width: 50%; 
+    display: grid;
+    grid-template-columns: 10% 85%;
+    grid-template-rows: 30px 25px 25px;
+    grid-column-gap: 15px;
+    min-width: 300px;
+   }
+#id{
+    grid-row: 1;
+    grid-column: 1;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 110%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+#teams{
+    grid-row: 1;
+    grid-column: 2;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 110%;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+}
+#event-logo{
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+}
+#time_and_date{
+    grid-row: 2;
+    grid-column: 2;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 90%;
+    color: white;
+    font-weight: bold;
+}
+#league-logo{
+    grid-row: 3;
+    grid-column: 1;
+    text-align: center;
+}
+#league{
+    grid-row: 3;
+    grid-column: 2;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 100%;
+    color: #999999;
+    font-weight: bold;
+}
+.markets-container{
+    display: flex;
+    overflow: auto;
+    overflow-y: hidden;
+    width: 100%;
+ }
+ .scroll-button{
+    position: relative;
+    right: 0;
+    height: 75px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+ }
+ .market{
+    width: auto;
+    border-right: 3px solid #2f2f2f;
+ }
+
+.odd{
+    background-color: #5c5b5b;
+}
+.even{
+    background-color: #505050;
+}
+
+::-webkit-scrollbar {
+    height: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

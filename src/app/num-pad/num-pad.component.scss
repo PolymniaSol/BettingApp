@@ -1,0 +1,43 @@
+.button{
+    background-color: #080808;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    margin: 1px;
+    width: 90px;
+    height: 60px;
+    cursor: pointer;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+.container{
+    width: 277px;
+    height: 247px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-left: 101px;
+    padding-top: 25px;
+    position: fixed;
+}
+// .button{
+//     background-color: #080808;
+//     color: white;
+//     text-align: center;
+//     font-size: 12px;
+//     border: none;
+//     margin: 1px;
+//     width: 15px;
+//     height: 15px;
+//     cursor: pointer;
+//     font-family: "Trebuchet MS", Helvetica, sans-serif;
+//     }
+// .container{
+//     width: 100px;
+//     height: 100px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-content: flex-start;
+//     padding-left: 101px;
+//     position: fixed;
+// }

@@ -1,0 +1,4 @@
+<div (click)="selectOdd(odd)" [ngClass]="{'clicked':odd.isClicked}">
+<div id="name">{{odd.name}}</div>
+<div id="value" [ngClass] = "changeOddColor()"> {{odd.value | number:'1.2-2'}}</div>
+</div>

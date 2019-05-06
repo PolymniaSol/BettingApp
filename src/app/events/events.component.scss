@@ -1,0 +1,55 @@
+.events-container{
+    height: 100%;
+    background-color: #282828;
+    display: grid;
+    grid-template-rows: 50px 90%;
+    width: 100%;
+    }
+
+.odd{
+    background-color: #434343;
+
+}
+.even{
+    background-color: #2f2f2f;
+}
+.events-info{
+    width: 100%;
+}
+.button{
+background-color: transparent;
+color: white;
+text-align: center;
+font-size: 16px;
+border: 1px solid #008b7d;
+margin: 7px 1px 0 2px;
+width: 150px;
+height: 35px;
+cursor: pointer;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#num{
+    color:#df9206;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.events{
+    overflow: auto;
+    height:calc(100vh - 130px);
+}
+::-webkit-scrollbar {
+    height: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

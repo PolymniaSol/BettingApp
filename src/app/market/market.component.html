@@ -1,0 +1,9 @@
+<div class="market-container">
+    <div id="name">{{market.name}}</div>
+    <div class="odds-container">
+        <div class="odd-container" *ngFor="let odd of market.odds; let i=index"
+            [ngClass]="{'even': i % 2 === 0 , 'odd': i % 2 != 0}">
+            <app-odd [odd]="odd"></app-odd>
+        </div>
+    </div>
+</div>

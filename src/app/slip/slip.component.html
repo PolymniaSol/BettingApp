@@ -1,0 +1,30 @@
+<div class="header">
+    <div class="container">
+    <div class="checkbox-container">
+        <label class="checkbox-label">
+            <input type="checkbox">
+            <span class="checkbox-custom rectangular"></span>
+        </label>
+    </div>
+    <div id="text">Accept Changes</div>
+    </div>
+        <button class="clear">CLEAR</button>
+</div>
+<div class="panel">
+    <app-selection></app-selection>
+</div>
+<div class="permutations">P E R M U T A T I O N S</div>    
+<div class="number_of_lines">
+    <div id="number">Number of Lines</div>
+    <div id="number">1</div>
+</div>
+<div class="number_of_lines">
+    <div id="number">Maximum Probable Payout</div>
+    <div id="number">€1.00</div>
+</div>
+<div class="number_of_lines">
+    <div id="number">Total Stake</div>
+    <div id="stake">€ {{stake|DecimalPipe|number: '1.2-2'}}</div>
+</div>
+<app-num-pad (buttonClick)='numReceived($event)'></app-num-pad>
+<button id="placebet">PLACE BET</button>

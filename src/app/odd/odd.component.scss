@@ -1,0 +1,38 @@
+#name{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 80%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+#value{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 120%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    height: 30px;
+}
+.odd_increased{
+    color: white;
+    font-size: 180%;
+    text-align: center;
+    animation-name: odd_inc;
+    animation-duration: 5s;
+}
+.odd_decreased{
+    color: white;
+    font-size: 180%;
+    text-align: center;
+    animation-name: odd_dec;
+    animation-duration: 5s;
+}
+@keyframes odd_inc{
+    to {background-color: green;}
+  }
+  @keyframes odd_dec{
+    to {background-color: red;}
+  }
+.clicked{
+    background-color: #ff5b00;
+}

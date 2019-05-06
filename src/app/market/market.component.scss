@@ -1,0 +1,16 @@
+#name{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 67%;
+    color: white;
+    text-align: center;
+}
+.odds-container{
+display: flex;  
+height: 68px;  
+  }
+.odd{background-color: #4d4d4d;}
+.even{background-color: #575757;}
+
+.odd-container{
+    width: 70px;
+}

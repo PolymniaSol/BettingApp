@@ -1,0 +1,17 @@
+<div class="event">
+  <div class="event-info">
+    <div id="id">{{footballEvent.id | slice:3:7}}</div>
+    <div id="teams">{{footballEvent.homeTeam}} - {{footballEvent.awayTeam}}</div>
+    <div id="event-logo"><img src="../../assets/football.png" width="20px"></div>
+    <div id="time_and_date">{{footballEvent.time}}   {{footballEvent.date}}</div>
+    <div id="league-logo"><img src="../../assets/greek_flag.png" width="25px"></div>
+    <div id="league">{{footballEvent.league}}</div>
+  </div>
+  <div #scroll class="markets-container">
+  <div class="market" *ngFor="let market of footballEvent.markets; let i=index" [ngClass]="{'even': i % 2 === 0 , 'odd': i % 2 != 0}">
+      <app-market [market] = "market"></app-market>
+  </div>
+  
+  </div>
+  <button (click)="scrollRight()" class="scroll-button">+</button>
+</div>
